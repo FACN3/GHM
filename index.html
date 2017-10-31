@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
 <html lang=en>
+
 <head>
   <title>GHM Team Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script type="text/javascript" src="/form.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="form.js"></script>
 
 <!-- Basic layout:
 
@@ -76,32 +78,7 @@
 </div>
   <!-- Insert Contact Form -->
 <div id="form">
-  <script>
 
-    function doIt(){
-      console.log(document.getElementById('message').value,    document.getElementById("fname").value,
-        document.getElementById('lname').value,
-         document.getElementById('email').value,
-        document.getElementById('phone').value)
-      emailjs.send("gmail","contact",{
-
-    message: document.getElementById('message').value,
-    fname:   document.getElementById("fname").value,
-    lname: document.getElementById('lname').value,
-    email: document.getElementById('email').value,
-    phone: document.getElementById('phone').value
-
-  })
-  .then(
-    function(response) {
-      console.log("SUCCESS", response);
-    },
-    function(error) {
-      console.log("FAILED", error);
-    }
-  );
-    }
-  </script>
   <form action="JavaScript:doIt()">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -119,7 +96,7 @@
     <textarea rows="5"  class="message" id="message" name="message" placeholder="Your last name..">
     </textarea>
 
-    <input type="submit" value="Submit" onclick="doIt">
+    <input type="submit" value="Submit" >
   </form>
 </div>
 
