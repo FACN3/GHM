@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_3KGBY3C7G3MeNxiVEvNCj");
+   })();
+</script>
+<script>
+
+  function doIt(){
+    console.log(document.getElementById('message').value,    document.getElementById("fname").value,
+      document.getElementById('lname').value,
+       document.getElementById('email').value,
+      document.getElementById('phone').value)
+    emailjs.send("gmail","contact",{
+
+  message: document.getElementById('message').value,
+  fname:   document.getElementById("fname").value,
+  lname: document.getElementById('lname').value,
+  email: document.getElementById('email').value,
+  phone: document.getElementById('phone').value
+
+})
+.then(
+  function(response) {
+    console.log("SUCCESS", response);
+  },
+  function(error) {
+    console.log("FAILED", error);
+  }
+);
+  }
+</script>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.message{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height:100px;
+}
+
+
+</style>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="JavaScript:doIt()">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your last name..">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your last name..">
+
+    <label for="message">Message</label>
+    <textarea rows="5"  class="message" id="message" name="message" placeholder="Your last name..">
+    </textarea>
+
+
+
+    <input type="submit" value="Submit" onclick="doIt">
+  </form>
+</div>
+
+</body>
+</html>
