@@ -18,7 +18,38 @@ a {
   display: block;
   padding: 8px;
 }
+/* text and section styling*/
+div{
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 10px 15px 10px;
+  back
+}
+.div__photos{
+  display: inline-flex;
+}
 
+.div__photos div.polaroid {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left:20px;
+}
+
+.div__photos div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+#About{
+  background-color:#328CC1;
+}
+#Team{
+  background-color:#D9B310;
+}
+#Contact{
+  background-color:#1D2731;
+}
 /* Contact Form */
 
 input[type=text], select {
