@@ -1,24 +1,54 @@
 
 /* Navigation Bar */
 
-ul {
+#navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #1D2731;
+  border-radius: 5px;
+
+
 }
 
-li {
+#navbar li {
   float: left;
   display: block;
-
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
 }
 
-a {
+#navbar li a {
   display: block;
-  padding: 8px;
 }
 
+#navbar a {
+  padding: 16px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+#navbar a:hover {
+  background-color: #0B3C5D;
+  color: #D9B310;
+}
+
+/* General CSS */
+
+body {
+  font-family: sans-serif;
+}
+div {
+  margin: 20px;
+  padding-top: 5px;
+}
+
+p {
+  text-align: justify;
+}
 /* Contact Form */
 
 input[type=text], select {
