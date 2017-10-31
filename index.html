@@ -2,9 +2,9 @@
 
 <html lang=en>
 <head>
-  <link rel="stylesheet" href="style.css">
   <title>GHM Team Portfolio</title>
-</head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <!-- Basic layout:
 
@@ -18,11 +18,10 @@
 --->
 
 <body>
-
 <h1 id="title">Welcome to GHM Robotics!</h1>
 
 <div id="navbar">
-  <ul style="list-style-type:none">
+  <ul>
     <li><a href="#About">About</a></li>
     <li><a href="#Team">Team</a></li>
     <li><a href="#Contact">Contact</a></li>
@@ -73,7 +72,54 @@
 <div id="Contact">
   <h2>Contact Us</h2>
   <p>We welcome any questions or queries you might have</p>
+</div>
   <!-- Insert Contact Form -->
+<div id="form">
+  <script>
+
+    function doIt(){
+      console.log(document.getElementById('message').value,    document.getElementById("fname").value,
+        document.getElementById('lname').value,
+         document.getElementById('email').value,
+        document.getElementById('phone').value)
+      emailjs.send("gmail","contact",{
+
+    message: document.getElementById('message').value,
+    fname:   document.getElementById("fname").value,
+    lname: document.getElementById('lname').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value
+
+  })
+  .then(
+    function(response) {
+      console.log("SUCCESS", response);
+    },
+    function(error) {
+      console.log("FAILED", error);
+    }
+  );
+    }
+  </script>
+  <form action="JavaScript:doIt()">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your last name..">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your last name..">
+
+    <label for="message">Message</label>
+    <textarea rows="5"  class="message" id="message" name="message" placeholder="Your last name..">
+    </textarea>
+
+    <input type="submit" value="Submit" onclick="doIt">
+  </form>
 </div>
 
 <div id="footer">
