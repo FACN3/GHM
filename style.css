@@ -1,3 +1,41 @@
+/* General CSS */
+
+body {
+  font-family: sans-serif;
+}
+
+div{
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+}
+
+p {
+  text-align: justify;
+}
+
+/* p h2 {
+  padding: 10px;
+} */
+
+#Content {
+  border-radius: 5px;
+  margin: 0px;
+  padding: 16px;
+  display: block;
+}
+
+#About{
+  background-color: #328CC1;
+}
+
+#Team{
+  background-color: #D9B310;
+}
+
+#Contact{
+  background-color: #1D2731;
+  color: white;
+}
 
 /* Navigation Bar */
 
@@ -8,8 +46,6 @@
   overflow: hidden;
   background-color: #1D2731;
   border-radius: 5px;
-
-
 }
 
 #navbar li {
@@ -22,24 +58,6 @@
 
 #navbar li a {
   display: block;
-}
-/* text and section styling*/
-div{
-  padding: 10px;
-  border-radius: 5px;
-  margin: 15px 10px 15px 10px;
-  back
-}
-.div__photos{
-  display: inline-flex;
-}
-
-.div__photos div.polaroid {
-  width: 25%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  margin-left:20px;
 }
 
 #navbar a {
@@ -54,34 +72,25 @@ div{
   color: #D9B310;
 }
 
-/* General CSS */
+/* Team Section */
 
-body {
-  font-family: sans-serif;
-}
-div {
-  margin: 20px;
-  padding-top: 5px;
+.div__photos{
+  display: inline-flex;
 }
 
-p {
-  text-align: justify;
+.div__photos div.polaroid {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left:20px;
 }
 
 .div__photos div.container {
   text-align: center;
   padding: 10px 20px;
 }
-#About{
-  background-color:#328CC1;
-}
-#Team{
-  background-color:#D9B310;
-}
-#Contact{
-  background-color:#1D2731;
 
-}
 /* Contact Form */
 
 input[type=text], select {
@@ -111,9 +120,11 @@ input[type=submit]:hover {
 
 #form {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2; */
     padding: 20px;
+    color: white;
 }
+
 .message{
   width: 100%;
   padding: 12px 20px;
