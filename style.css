@@ -30,29 +30,33 @@ p {
     margin: 0;
     padding: 0;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: #1D2731;
     position: fixed;
     height: 100%;
     overflow: auto;
     float: left;
+
+}
+#navbar li {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
 }
 
 #navbar li a {
     display: block;
-    color: #000;
+    color: white;
     padding: 8px 16px;
     text-decoration: none;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
-#navbar li a.active {
-    background-color: #4CAF50;
-    color: white;
+#navbar li a:hover {
+  background-color: #0B3C5D;
+  color: #D9B310;
 }
 
-#navbar li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
 
 /* p h2 {
   padding: 10px;
