@@ -80,7 +80,6 @@ function check_typing(value,id,field,reg){
 // If all fields are appropriately filled, send a success message to the user and send the email.
 if(state){
 
-    alert("Thank you for your interest in GHM Robotics. Your query has been submitted, we will return to you shortly.");
     emailjs.send("gmail","contact",{
 
     message: document.getElementById('message').value,
@@ -94,9 +93,11 @@ if(state){
 .then(
   function(response) {
     console.log("SUCCESS", response);
+    alert("Thank you for your interest in GHM Robotics. Your query has been submitted, we will return to you shortly.");
   },
   function(error) {
     console.log("FAILED", error);
   }
 );};
+
 }
