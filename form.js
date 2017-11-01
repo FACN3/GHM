@@ -1,11 +1,11 @@
 
 // Initializing the emailjs application.
- (function(){
+(function(){
   emailjs.init("user_3KGBY3C7G3MeNxiVEvNCj");
- })();
+})();
 
 
- function doIt(){
+function doIt(){
     var state=true;
     function check_null(value,id,field){
       if(value){
@@ -15,9 +15,9 @@
         state=false;
         formError(1,field,id);
       }
-  }
+}
 
-  function check_typing(value,id,field,reg){
+function check_typing(value,id,field,reg){
      if(reg.test(value)){
        return;
      }
@@ -25,7 +25,7 @@
        state=false;
          formError(2,field,id);
      }
-  }
+}
 
   arr=[document.getElementById("fname").value,
        document.getElementById('lname').value,
@@ -85,5 +85,5 @@ function formError(errCode,field,id){
     alert("Couldn't submit beacuse you haven't filled "+field);}
   if(errCode==2){
     alert("Couldn't submit beacuse the "+field+ " isn't filled properly");}
-}
+ }
 }
