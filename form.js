@@ -1,4 +1,3 @@
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js">
 
    (function(){
       emailjs.init("user_3KGBY3C7G3MeNxiVEvNCj");
@@ -45,7 +44,7 @@
         break;
         case 3:
         check_null(arr[3],"phone","Phone");
-        check_typing(arr[3],"phone","Phone",/^[0-9]$/);
+        check_typing(arr[3],"phone","Phone",/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/);
         break;
         case 4:
         check_null(arr[4],"message","Message");
@@ -76,9 +75,9 @@ function formError(errCode,field,id){
   if(errCode==0){
   alert("Couldn't submit beacuse you haven't filled "+field);}
   if(errCode==1){
-  alert("Couldn't submit beacuse the "+field " isn't filled properly");}
+  alert("Couldn't submit beacuse the "+field+ " isn't filled properly");
+}
 }
 
 
   }
-</script>
