@@ -33,6 +33,9 @@
        document.getElementById('phone').value,
      document.getElementById('message').value];
      for(i=0;i<arr.length;i++){
+       if(!state){
+         break;
+       }
       switch(i){
         case 0:
         check_null(arr[0],"fname","First Name");
