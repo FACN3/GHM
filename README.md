@@ -42,7 +42,11 @@ As a start, we have divided the work into 3 main aspects, the overall html, over
       Working on the design and CSS. 
       Writing some of the "Who We Are" section of the website.
       
+### Final Update - End of Day 2
 
+- Completed the required user stories.
+- Used our imagination to create website content.
+- Worked on the adaptability of the website as well as adopting a mobile first strategy for the design.
 
 
 ## TECHNOLOGIES IN USE
@@ -51,11 +55,25 @@ As a start, we have divided the work into 3 main aspects, the overall html, over
 
 Emailjs is a third-party library and application that allows to code email functionalities whithin a website using Javascript and client-side technologies alone. 
 
-Reference: https://www.emailjs.com/
-
 Emailjs allows their users to connect their email services. Through a templating system, it is possibile to configure the information that will be sent to the emailjs user and configure it to match the type of form that is being filled by the client on the website. Emailjs also provide security systems such as captach validation and server-side sanitization making it safe to use as a 3rd-party application.
 
+### Mobile First
 
+We aimed to create a responsive design for our website in order for it to be viewable through a variety of devices. Being conscious that most of our users will view this website through their mobile devices, we decided to adopt a mobile first strategy to ensure a good browsing experience on small screens and tablets as well as laptops and desktops.
+
+### Input Sanitization
+
+We aimed to create a web form that is secure to submit to the server and doesn't allow empty fields to be left out by carefully checking the value of each field submitted through the use of regular expressions. 
+
+### Adaptability
+
+Our website has a result of 97% when performing an audit for accessibility using the Accessibility Tools extension in Chrome. We beleive this is sufficient for users with various disabilities to browse our website without any major issues.
+
+## Ressources
+
+Emailjs: https://www.emailjs.com/
+
+Mobile First Startegy: https://www.uxmatters.com/mt/archives/2012/03/mobile-first-what-does-it-mean.php
 
 
 
