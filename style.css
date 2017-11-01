@@ -59,12 +59,8 @@ p {
 
 }
 #Content {
-  box-shadow: -10px 15px 5px #888888;
-  margin: 0px 10px 25px 15px;
-  padding: 0;
-  display: block;
-
-
+  margin-left:25%;padding:1px 16px;
+  box-shadow: -10px 15px 5px white;
 }
 
 #About{
@@ -190,6 +186,12 @@ width: 100%-20px;
   .polaroid {
     width: 90%;
   }
+  #Content {
+
+    margin: 0px 10px 25px 15px;
+    padding: 0;
+    display: block;
+  }
   /* Navigation Bar */
   #navbar{
     padding:0;
@@ -232,8 +234,14 @@ width: 100%-20px;
     background-color: #0B3C5D;
     color: #D9B310;
   }
-
+  #Content {
+    box-shadow: -10px 15px 5px #888888;
+    margin: 0px 10px 25px 15px;
+    padding: 0;
+    display: block;
+  }
 }
+
 @media only screen and (min-width: 940px) {
   .div__photos{
     display: inline-flex;
