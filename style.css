@@ -60,8 +60,24 @@ p {
 #header{
   text-align: center;
   background-color: #0B3C5D;
-
+  background-image: url('images/theme.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
 }
+
+#title{
+  padding-top: 70px;
+  font-family: impact, sans-serif;
+  font-size: 70px;
+}
+
+#tagline{
+  font-size: 28px;
+  font-style: italic;
+  margin-top: -15px;
+  padding-bottom: 45px;
+}
+
 #Content {
   margin-left:23%;padding:1px 16px;
   box-shadow: -10px 15px 5px white;
@@ -81,7 +97,6 @@ p {
 
 }
 
-
 #footer{
   background-color: #0B3C5D;
   text-align: center;
@@ -93,8 +108,8 @@ p {
 
 .div__photos{
   width: 100%;
-margin: auto;
-padding: 0;
+  margin: auto;
+  padding: 0;
 }
 
 .polaroid {
@@ -163,8 +178,8 @@ input[type=submit]:hover {
 }
 .container{
 
-  font-family: Georgia, serif;
-font-style: italic;
+font-family: Georgia, serif;
+font-style: bold;
 color: #444444;
 letter-spacing: 1.25px;
 line-height: 1.5;
@@ -174,6 +189,7 @@ margin: auto;
 font-size: 13pt;
 width: 100%-20px;
 }
+
 @media only screen and (min-width: 768px) {
 
   body {
