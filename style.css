@@ -46,6 +46,8 @@ p {
   overflow: hidden;
   background-color: #1D2731;
   border-radius: 5px;
+
+
 }
 
 #navbar li {
@@ -53,7 +55,9 @@ p {
   display: block;
   font-size: 22px;
   font-weight: bold;
-  color: #fff;
+  color: #fff
+  white-space:nowrap;
+
 }
 
 #navbar li a {
@@ -78,12 +82,10 @@ p {
   display: inline-flex;
 }
 
-.div__photos div.polaroid {
-  width: 25%;
+.polaroid {
+  width: 30%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  margin-left:20px;
 }
 
 .div__photos div.container {
@@ -134,4 +136,17 @@ input[type=submit]:hover {
   border-radius: 4px;
   box-sizing: border-box;
   height:100px;
+}
+.container{
+
+  font-family: Georgia, serif;
+font-style: italic;
+color: #444444;
+letter-spacing: 1.25px;
+line-height: 1.5;
+background: #EEEEEE;
+padding: 5px;
+margin: 0px;
+font-size: 13pt;
+width: 92%;
 }
