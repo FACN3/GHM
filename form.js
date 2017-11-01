@@ -27,12 +27,15 @@ function check_typing(value,id,field,reg){
      }
 }
 
-arr=[document.getElementById("fname").value,
-    document.getElementById('lname').value,
-    document.getElementById('email').value,
-    document.getElementById('phone').value,
-    document.getElementById('message').value];
-    for(i=0;i<arr.length;i++){
+  arr=[document.getElementById("fname").value,
+       document.getElementById('lname').value,
+       document.getElementById('email').value,
+       document.getElementById('phone').value,
+     document.getElementById('message').value];
+     for(i=0;i<arr.length;i++){
+       if(!state){
+         break;
+       }
       switch(i){
         case 0:
         check_null(arr[0],"fname","First Name");
