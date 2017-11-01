@@ -234,16 +234,14 @@ width: 100%-20px;
     background-color: #0B3C5D;
     color: #D9B310;
   }
-
+  #Content {
+    box-shadow: -10px 15px 5px #888888;
+    margin: 0px 10px 25px 15px;
+    padding: 0;
+    display: block;
+  }
 }
-#Content {
-  box-shadow: -10px 15px 5px #888888;
-  margin: 0px 10px 25px 15px;
-  padding: 0;
-  display: block;
 
-
-}
 @media only screen and (min-width: 940px) {
   .div__photos{
     display: inline-flex;
