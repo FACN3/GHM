@@ -2,26 +2,37 @@
 
 body {
   font-family: sans-serif;
+  color : white;
+
 }
 
 div{
-  padding: 10px;
-  margin: 0px 10px 0px 10px;
+  padding: 20px 25px 20px 25px;
+  margin: 0;
+  text-align: center;
+
 }
 
 p {
   text-align: justify;
+
 }
 
 /* p h2 {
   padding: 10px;
 } */
+#header{
+  text-align: center;
+  background-color: #0B3C5D;
 
+}
 #Content {
-  border-radius: 5px;
-  margin: 0px;
-  padding: 16px;
+  box-shadow: -10px 15px 5px #888888;
+  margin: 0px 10px 25px 15px;
+  padding: 0;
   display: block;
+
+
 }
 
 #About{
@@ -35,17 +46,21 @@ p {
 #Contact{
   background-color: #1D2731;
   color: white;
+  
 }
 
 /* Navigation Bar */
-
+#navbar{
+  padding:0;
+  margin: 0 ;
+}
 #navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #1D2731;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 #navbar li {
@@ -70,6 +85,9 @@ p {
 #navbar a:hover {
   background-color: #0B3C5D;
   color: #D9B310;
+}
+#footer{
+  background-color: #0B3C5D;
 }
 
 /* Team Section */
@@ -123,6 +141,7 @@ input[type=submit]:hover {
     /*background-color: #f2f2f2; */
     padding: 20px;
     color: white;
+    text-align: left;
 }
 
 .message{
