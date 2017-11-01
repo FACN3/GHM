@@ -10,6 +10,18 @@ function formError(field,id){
  }
 //}
 
+//Rest All the fields
+function resetAll(arr){
+      for(i=0;i<arr.length;i++){
+
+         document.getElementById(arr[i]).value="";
+         document.getElementById(arr[i]).style.borderColor="";
+
+
+      }
+
+}
+
 // Checks for empty fields.
 function doIt(){
     var state=true;
@@ -73,6 +85,8 @@ function check_typing(value,id,field,reg){
         break;
         case 4:
         check_null(arr[4],"message","Message");
+        check_typing(arr[4],"message","Message",/(.*[a-z]){1}/i);
+
         break;
       }
     }
@@ -93,6 +107,8 @@ if(state){
 .then(
   function(response) {
     console.log("SUCCESS", response);
+    resetAll(['fname','lname','email','phone','message']);
+
     alert("Thank you for your interest in GHM Robotics. Your query has been submitted, we will return to you shortly.");
   },
   function(error) {
