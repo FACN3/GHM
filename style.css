@@ -3,6 +3,7 @@
 body {
   font-family: sans-serif;
   color : white;
+  margin 0;
 
 }
 
@@ -15,7 +16,38 @@ div{
 
 p {
   text-align: justify;
+}
+/*nav bar */
+#navbar{
+  padding: 0;
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
 
+#navbar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#navbar li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#navbar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
 
 /* p h2 {
@@ -49,47 +81,7 @@ p {
 
 }
 
-/* Navigation Bar */
-#navbar{
-  padding:0;
-  margin: 0 ;
-}
-#navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #1D2731;
-  border-radius: 0;
 
-
-}
-
-#navbar li {
-  float: left;
-  display: block;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff
-  white-space:nowrap;
-
-}
-
-#navbar li a {
-  display: block;
-}
-
-#navbar a {
-  padding: 16px;
-  color: #fff;
-  text-decoration: none;
-
-}
-
-#navbar a:hover {
-  background-color: #0B3C5D;
-  color: #D9B310;
-}
 #footer{
   background-color: #0B3C5D;
   text-align: center;
@@ -100,15 +92,20 @@ p {
 /* Team Section */
 
 .div__photos{
-  display: inline-flex;
   width: 100%;
+margin: auto;
+padding: 0;
 }
 
 .polaroid {
-  width: 27%;
+  width: 90%;
   background-color: white;
-  margin-right: auto;
+  margin-right:  auto;
+  margin-left:   auto;
+  margin-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: auto;
+
 }
 
 .div__photos div.container {
@@ -170,7 +167,85 @@ letter-spacing: 1.25px;
 line-height: 1.5;
 background: #EEEEEE;
 padding: 5px;
-margin: 0px;
+margin: auto;
 font-size: 13pt;
-width: 92%;
+width: 100%-20px;
+}
+@media only screen and (min-width: 768px) {
+
+  body {
+    font-family: sans-serif;
+    color : white;
+  }
+  div{
+    padding: 20px 25px 20px 25px;
+    margin: 0;
+    text-align: center;
+
+  }
+  p {
+    text-align: justify;
+  }
+
+  .polaroid {
+    width: 90%;
+  }
+  /* Navigation Bar */
+  #navbar{
+    padding:0;
+    margin: 0 ;
+  }
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1D2731;
+    border-radius: 0;
+    position: static;
+    width: 100%
+
+  }
+
+  #navbar li {
+    float: left;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff
+    white-space:nowrap;
+
+  }
+
+  #navbar li a {
+    display: block;
+  }
+
+  #navbar a {
+    padding: 16px;
+    color: #fff;
+    text-decoration: none;
+
+  }
+
+  #navbar a:hover {
+    background-color: #0B3C5D;
+    color: #D9B310;
+  }
+
+}
+@media only screen and (min-width: 940px) {
+  .div__photos{
+    display: inline-flex;
+    width: 100%;
+  }
+  .polaroid {
+    width: 27%;
+    background-color: white;
+    margin-right:  auto;
+    margin-left:   auto;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: auto;
+  }
 }
