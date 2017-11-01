@@ -59,7 +59,7 @@ Emailjs allows their users to connect their email services. Through a templating
 
 ### Mobile First
 
-We aimed to create a responsive design for our website in order for it to be viewable through a variety of devices. Being conscious that most of our users will view this website through their mobile devices, we decided to adopt a mobile first strategy to ensure a good browsing experience on small screens and tablets as well as laptops and desktops.
+We tried to create a responsive design for our website in order for it to be viewable through a variety of devices. Being conscious that most of our users will view this website through their mobile devices, we decided to adopt a mobile first strategy to ensure a good browsing experience on small screens and tablets as well as laptops and desktops. 
 
 ### Input Sanitization
 
