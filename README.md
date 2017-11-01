@@ -24,4 +24,41 @@ As a start, we have divided the work into 3 main aspects, the overall html, over
 
 
 
+## UPDATES
+
+### DAY 1
+
+- Mynah created a basic html layout to start to work with. 
+- Hassan worked on the CSS and more specific design. 
+- Ghasan worked on the javascript to create the form.
+
+### DAY 2
+
+- Mynah: 
+      Updating the README. 
+      Working on the contact form to adjust the javascript alert messages when the user is not filling the form properly.           Write the About section of the website as well.
+
+- Hasan and Ghasan: 
+      Working on the design and CSS. 
+      Writing some of the "Who We Are" section of the website.
+      
+
+
+
+## TECHNOLOGIES IN USE
+
+### Emailjs
+
+Emailjs is a third-party library and application that allows to code email functionalities whithin a website using Javascript and client-side technologies alone. 
+
+Reference: https://www.emailjs.com/
+
+Emailjs allows their users to connect their email services. Through a templating system, it is possibile to configure the information that will be sent to the emailjs user and configure it to match the type of form that is being filled by the client on the website. Emailjs also provide security systems such as captach validation and server-side sanitization making it safe to use as a 3rd-party application.
+
+
+
+
+
+
+
 
