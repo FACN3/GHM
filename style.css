@@ -85,6 +85,7 @@ p {
 #Content {
   margin-left:23%;padding:1px 16px;
   box-shadow: -10px 15px 5px white;
+
 }
 
 #About{
@@ -117,7 +118,7 @@ p {
 }
 
 .polaroid {
-  width: 90%;
+  width: 90%-25px;
   background-color: white;
   margin-right:  auto;
   margin-left:   auto;
