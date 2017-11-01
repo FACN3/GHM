@@ -46,7 +46,7 @@ p {
 #Contact{
   background-color: #1D2731;
   color: white;
-  
+
 }
 
 /* Navigation Bar */
@@ -60,7 +60,7 @@ p {
   padding: 0;
   overflow: hidden;
   background-color: #1D2731;
-  border-radius: 5px;
+  border-radius: 0;
 
 
 }
@@ -92,17 +92,22 @@ p {
 }
 #footer{
   background-color: #0B3C5D;
+  text-align: center;
 }
-
+#footer p{
+  text-align: center;
+}
 /* Team Section */
 
 .div__photos{
   display: inline-flex;
+  width: 100%;
 }
 
 .polaroid {
-  width: 30%;
+  width: 27%;
   background-color: white;
+  margin-right: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
