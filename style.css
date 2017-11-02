@@ -17,16 +17,16 @@ p {
 }
 
 /*nav bar */
-#navbar1{
+.navbar1{
   display: none;
 }
 
-#navbar{
+.navbar{
   visibility: visible;
   padding: 0;
 }
 
-#navbar ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,13 +38,13 @@ p {
     float: left;
 }
 
-#navbar li {
+.navbar li {
   font-size: 22px;
   font-weight: bold;
   color: white;
 }
 
-#navbar li a {
+.navbar li a {
     display: block;
     color: white;
     padding: 8px 16px;
@@ -53,14 +53,14 @@ p {
     margin-top: 10px;
 }
 
-#navbar li a:hover {
+.navbar li a:hover {
   background-color: #0B3C5D;
   color: #D9B310;
 }
 
 
 
-#header{
+.header{
   text-align: center;
   background-color: #0B3C5D;
   background-image: url('images/theme.jpg');
@@ -68,42 +68,42 @@ p {
   background-position: center right;
 }
 
-#title{
+.title{
   padding-top: 70px;
   font-family: impact, sans-serif;
   font-size: 70px;
 }
 
-#tagline{
+.tagline{
   font-size: 28px;
   font-style: italic;
   margin-top: -15px;
   padding-bottom: 45px;
 }
 
-#Content {
+.Content {
   margin-left:23%;padding:1px 16px;
   box-shadow: -10px 15px 5px white;
 }
 
-#About{
+.About{
   background-color: #328CC1;
 }
 
-#Team{
+.Team{
   background-color: #D9B310;
 }
 
-#Contact{
+.Contact{
   background-color: #1D2731;
   color: white;
 }
 
-#footer{
+.footer{
   background-color: #0B3C5D;
   text-align: center;
 }
-#footer p{
+.footer p{
   text-align: center;
 }
 /* Team Section */
@@ -156,7 +156,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-#form {
+.form {
     border-radius: 5px;
     /*background-color: #f2f2f2; */
     padding: 20px;
@@ -211,20 +211,20 @@ width: 100%-20px;
   .polaroid {
     width: 90%;
   }
-  #Content {
+  .Content {
 
     margin: 0px 10px 25px 15px;
     padding: 0;
     display: block;
   }
   /* Navigation Bar */
-  #navbar1{
+  .navbar1{
     padding:0;
     margin: 0 ;
     float: none;
     display: block;
   }
-  #navbar1 ul {
+  .navbar1 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -236,7 +236,7 @@ width: 100%-20px;
     width: 100%
   }
 
-  #navbar1 li {
+  .navbar1 li {
     float: left;
     display: block;
     font-size: 22px;
@@ -245,24 +245,24 @@ width: 100%-20px;
     white-space:nowrap;
   }
 
-  #navbar1 li a {
+  .navbar1 li a {
     display: block;
   }
 
-  #navbar1 a {
+  .navbar1 a {
     padding: 16px;
     color: #fff;
     text-decoration: none;
   }
 
-  #navbar1 a:hover {
+  .navbar1 a:hover {
     background-color: #0B3C5D;
     color: #D9B310;
   }
-  #navbar{
+  .navbar{
     visibility: hidden;
   }
-  #Content {
+  .Content {
     box-shadow: -10px 15px 5px #888888;
     margin: 10px 10px 25px 15px;
     padding: 0;
