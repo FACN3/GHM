@@ -87,7 +87,7 @@ p {
 }
 
 #About{
-  background-color: #328CC1;
+  background-color: #007595;
   padding-right: 16%;
   padding-left: 16%;
 }
@@ -99,15 +99,19 @@ p {
 }
 
 #Team{
-  background-color: #D9B310;
+  background-color: #ECDC62;
 }
 #Team h2{
   font-size: 30px;
+  color: #063147;
+
 }
 #Team p{
   padding-left: 10%;
   padding-right: 9%;
   font-size: 25px;
+  color: #063147;
+
 }
 #Contact{
   background-color: #1D2731;
@@ -123,7 +127,7 @@ p {
 }
 
 footer{
-  background-color: #0B3C5D;
+  background-color: #007195;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
