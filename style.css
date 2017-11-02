@@ -112,20 +112,51 @@ footer p {
   font-size : 25px;
 }
 
-/*** TEAM Section ***/
-.Team {
-  background-color: #D9B310;
+
+.Team{
+  background-color: #ECDC62;
 }
 
 .Team h2 {
   font-size: 30px;
+  color: #063147;
+
 }
 
 .Team p {
   padding-left: 10%;
   padding-right: 9%;
   font-size: 25px;
+  color: #063147;
+
 }
+.Contact{
+
+  background-color: #1D2731;
+  color: white;
+}
+.Contact h2{
+  font-size: 30px;
+}
+.Contact p{
+  font-size: 25px;
+  padding-left: 2%;
+  padding-right:10%;
+}
+
+
+footer{
+  background-color: #007195;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+footer p{
+  text-align: center;
+}
+/* Team Section */
 
 /* Images CSS */
 .div__photos {
