@@ -99,11 +99,13 @@ p {
   color: white;
 }
 
-#footer{
+footer{
   background-color: #0B3C5D;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-#footer p{
+footer p{
   text-align: center;
 }
 /* Team Section */
