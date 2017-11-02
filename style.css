@@ -4,27 +4,28 @@ body {
   font-family: sans-serif;
   color : white;
   margin: 0;
-
 }
 
 div{
   padding: 20px 25px 20px 25px;
   margin: 0;
   text-align: center;
-
 }
 
 p {
   text-align: justify;
 }
+
 /*nav bar */
 #navbar1{
   display: none;
 }
+
 #navbar{
   visibility: visible;
   padding: 0;
 }
+
 #navbar ul {
     list-style-type: none;
     margin: 0;
@@ -35,8 +36,8 @@ p {
     height: 100%;
     overflow: auto;
     float: left;
-
 }
+
 #navbar li {
   font-size: 22px;
   font-weight: bold;
@@ -83,7 +84,6 @@ p {
 #Content {
   margin-left:23%;padding:1px 16px;
   box-shadow: -10px 15px 5px white;
-
 }
 
 #About{
@@ -97,7 +97,6 @@ p {
 #Contact{
   background-color: #1D2731;
   color: white;
-
 }
 
 #footer{
@@ -123,7 +122,6 @@ p {
   margin-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: auto;
-
 }
 
 .div__photos div.container {
@@ -245,7 +243,6 @@ width: 100%-20px;
     font-weight: bold;
     color: #fff
     white-space:nowrap;
-
   }
 
   #navbar1 li a {
@@ -256,7 +253,6 @@ width: 100%-20px;
     padding: 16px;
     color: #fff;
     text-decoration: none;
-
   }
 
   #navbar1 a:hover {
