@@ -2,6 +2,8 @@
 
 This repo contains all the files related to the Team portfolio for Week 1's FAC3 project.
 
+Link to website:  https://facn3.github.io/GHM/
+
 ## WHY?
 
 In this project, we are creating a simple one-page website to serve as an introduction card for our developping team. The idea is to create an introductury website that introduces our work and ourselves to potential clients.
