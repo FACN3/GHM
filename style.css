@@ -1,12 +1,12 @@
-/* General CSS */
-/*mobile-first*/
+/* General Document CSS */
+
 body {
   font-family: sans-serif;
   color : white;
   margin: 0;
 }
 
-div{
+div {
   padding: 20px 25px 20px 25px;
   margin: 0;
   text-align: center;
@@ -16,26 +16,39 @@ p {
   text-align: justify;
 }
 
-/*nav bar */
-.navbar1{
+footer {
+  background-color: #0B3C5D;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+/*** NAVBAR Desktop/Laptop ***/
+
+/*Hide Mobile navbar(navbar1) when viewing on Desktop/laptop */
+.navbar1 {
   display: none;
 }
 
-.navbar{
+.navbar {
   visibility: visible;
   padding: 0;
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #1D2731;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #1D2731;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  float: left;
 }
 
 .navbar li {
@@ -45,12 +58,12 @@ p {
 }
 
 .navbar li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    margin-bottom: 15px;
-    margin-top: 10px;
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .navbar li a:hover {
@@ -58,9 +71,8 @@ p {
   color: #D9B310;
 }
 
-
-
-.header{
+/*** ID Specifi CSS ***/
+.header {
   text-align: center;
   background-color: #0B3C5D;
   background-image: url('images/theme.jpg');
@@ -68,13 +80,13 @@ p {
   background-position: center right;
 }
 
-.title{
+.title {
   padding-top: 70px;
   font-family: impact, sans-serif;
   font-size: 70px;
 }
 
-.tagline{
+.tagline {
   font-size: 28px;
   font-style: italic;
   margin-top: -15px;
@@ -86,37 +98,32 @@ p {
   box-shadow: -10px 15px 5px white;
 }
 
-#About{
-  background-color: #007595;
-
-.About{
-   background-color: #007595;
-
+.About {
+  background-color: #328CC1;
   padding-right: 16%;
   padding-left: 16%;
 }
+
 #About h2{
   font-size: 30px;
 }
+
 #About p{
   font-size : 25px;
 }
-
 
 
 .Team{
   background-color: #ECDC62;
 }
 
-
-
-
-.Team h2{
+.Team h2 {
   font-size: 30px;
   color: #063147;
 
 }
-.Team p{
+
+.Team p {
   padding-left: 10%;
   padding-right: 9%;
   font-size: 25px;
@@ -151,7 +158,8 @@ footer p{
 }
 /* Team Section */
 
-.div__photos{
+/* Images CSS */
+.div__photos {
   width: 100%;
   margin: auto;
   padding: 0;
@@ -172,7 +180,34 @@ footer p{
   padding: 10px 20px;
 }
 
-/* Contact Form */
+/* CONTACT FORM */
+
+.Contact {
+  background-color: #1D2731;
+  color: white;
+}
+
+.Contact h2 {
+  font-size: 30px;
+}
+
+.Contact p {
+  font-size: 25px;
+  padding-left: 2%;
+  padding-right:10%;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 3;
+}
+
+input {
+    font-size: 13px;
+    width: 400px;
+    padding: 0 20px;
+}
 
 input[type=text], select {
     width: 100%;
@@ -207,7 +242,7 @@ input[type=submit]:hover {
     text-align: left;
 }
 
-.message{
+.message {
   font-size: 15px;
   line-height: 3;
 
@@ -220,20 +255,20 @@ input[type=submit]:hover {
   box-sizing: border-box;
   height:100px;
 }
-.container{
-
-font-family: Georgia, serif;
-font-style: bold;
-color: #444444;
-letter-spacing: 1.25px;
-line-height: 1.5;
-background: #EEEEEE;
-padding: 5px;
-margin: auto;
-font-size: 13pt;
-width: 100%-20px;
+.container {
+  font-family: Georgia, serif;
+  font-style: bold;
+  color: #444444;
+  letter-spacing: 1.25px;
+  line-height: 1.5;
+  background: #EEEEEE;
+  padding: 5px;
+  margin: auto;
+  font-size: 13pt;
+  width: 100%-20px;
 }
 
+/*** MOBILE FIRST Strategy ***/
 @media only screen and (min-width: 768px) {
 
   body {
@@ -241,12 +276,13 @@ width: 100%-20px;
     color : white;
     margin: 8px;
   }
-  div{
+
+  div {
     padding: 20px 25px 20px 25px;
     margin: 0;
     text-align: center;
-
   }
+
   p {
     text-align: justify;
   }
@@ -254,19 +290,27 @@ width: 100%-20px;
   .polaroid {
     width: 90%;
   }
-  .Content {
 
+  .Content {
     margin: 0px 10px 25px 15px;
     padding: 0;
     display: block;
   }
-  /* Navigation Bar */
+
+  /* MOBILE Navigation Bar */
+
+  /* Hide Desktop/Laptop navbar(navbar) when viewing on mobile */
+  .navbar {
+    visibility: hidden;
+  }
+
   .navbar1{
     padding:0;
     margin: 0 ;
     float: none;
     display: block;
   }
+
   .navbar1 ul {
     list-style-type: none;
     margin: 0;
@@ -302,9 +346,7 @@ width: 100%-20px;
     background-color: #0B3C5D;
     color: #D9B310;
   }
-  .navbar{
-    visibility: hidden;
-  }
+
   .Content {
     box-shadow: -10px 15px 5px #888888;
     margin: 10px 10px 25px 15px;
@@ -314,10 +356,11 @@ width: 100%-20px;
 }
 
 @media only screen and (min-width: 940px) {
-  .div__photos{
+  .div__photos {
     display: inline-flex;
     width: 100%;
   }
+
   .polaroid {
     width: 27%;
     background-color: white;
@@ -327,16 +370,4 @@ width: 100%-20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: auto;
   }
-}
-
-input,
-input::-webkit-input-placeholder {
-    font-size: 15px;
-    line-height: 3;
-}
-
-input {
-    font-size: 13px;
-    width: 400px;
-    padding: 0 20px;
 }
