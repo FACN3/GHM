@@ -12,14 +12,10 @@ function formError(field,id){
 
 //Rest All the fields
 function resetAll(arr){
-      for(i=0;i<arr.length;i++){
-
-         document.getElementById(arr[i]).value="";
-         document.getElementById(arr[i]).style.borderColor="";
-
-
-      }
-
+  for(i=0;i<arr.length;i++){
+    document.getElementById(arr[i]).value="";
+    document.getElementById(arr[i]).style.borderColor="";
+  }
 }
 
 // Checks for empty fields.
