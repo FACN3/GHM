@@ -90,16 +90,38 @@ p {
 
 #About{
   background-color: #328CC1;
+  padding-right: 16%;
+  padding-left: 16%;
+}
+#About h2{
+  font-size: 30px;
+}
+#About p{
+  font-size : 25px;
 }
 
 #Team{
   background-color: #D9B310;
 }
-
+#Team h2{
+  font-size: 30px;
+}
+#Team p{
+  padding-left: 12%;
+  /*padding-right: 10%;*/
+  font-size: 25px;
+}
 #Contact{
   background-color: #1D2731;
   color: white;
-
+}
+#Contact h2{
+  font-size: 30px;
+}
+#Contact p{
+  font-size: 25px;
+  padding-left: 2%;
+  padding-right:10%;
 }
 
 #footer{
