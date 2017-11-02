@@ -104,14 +104,13 @@ footer p {
   padding-left: 16%;
 }
 
-#About h2{
+.About h2{
   font-size: 30px;
 }
 
-#About p{
+.About p{
   font-size : 25px;
 }
-
 
 .Team{
   background-color: #ECDC62;
