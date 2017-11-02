@@ -1,42 +1,55 @@
-/* General CSS */
-/*mobile-first*/
+/*** General Document CSS ***/
 body {
   font-family: sans-serif;
   color : white;
   margin: 0;
-
 }
 
-div{
+div {
   padding: 20px 25px 20px 25px;
   margin: 0;
   text-align: center;
-
 }
 
 p {
   text-align: justify;
 }
-/*nav bar */
-#navbar1{
+
+footer {
+  background-color: #0B3C5D;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+/*** NAVBARS (desktop/laptop) ***/
+
+/* Hide the mobile navbar(navbar1) when viewing on desktop/laptop */
+#navbar1 {
   display: none;
 }
-#navbar{
+
+#navbar {
   visibility: visible;
   padding: 0;
 }
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #1D2731;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    float: left;
 
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #1D2731;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  float: left;
 }
+
 #navbar li {
   font-size: 22px;
   font-weight: bold;
@@ -44,12 +57,12 @@ p {
 }
 
 #navbar li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    margin-bottom: 15px;
-    margin-top: 10px;
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 #navbar li a:hover {
@@ -57,11 +70,8 @@ p {
   color: #D9B310;
 }
 
-
-/* p h2 {
-  padding: 10px;
-} */
-#header{
+/*** ID specific CSS ***/
+#header {
   text-align: center;
   background-color: #0B3C5D;
   background-image: url('images/theme.jpg');
@@ -69,13 +79,13 @@ p {
   background-position: center right;
 }
 
-#title{
+#title {
   padding-top: 70px;
   font-family: impact, sans-serif;
   font-size: 70px;
 }
 
-#tagline{
+#tagline {
   font-size: 28px;
   font-style: italic;
   margin-top: -15px;
@@ -87,32 +97,22 @@ p {
   box-shadow: -10px 15px 5px white;
 }
 
-#About{
+#About {
   background-color: #328CC1;
 }
 
-#Team{
+#Team {
   background-color: #D9B310;
 }
 
-#Contact{
+#Contact {
   background-color: #1D2731;
   color: white;
-
 }
 
-footer{
-  background-color: #0B3C5D;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-footer p{
-  text-align: center;
-}
-/* Team Section */
+/* Team Section (images)*/
 
-.div__photos{
+.div__photos {
   width: 100%;
   margin: auto;
   padding: 0;
@@ -126,7 +126,6 @@ footer p{
   margin-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: auto;
-
 }
 
 .div__photos div.container {
@@ -134,45 +133,55 @@ footer p{
   padding: 10px 20px;
 }
 
-/* Contact Form */
+/**** Contact Form ****/
 
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 3;
+}
+
+input {
+  font-size: 13px;
+  width: 400px;
+  padding: 0 20px;
 }
 
 #form {
-    border-radius: 5px;
-    /*background-color: #f2f2f2; */
-    padding: 20px;
-    color: white;
-    text-align: left;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  text-align: left;
 }
 
-.message{
+.message {
   font-size: 15px;
   line-height: 3;
-
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -182,20 +191,21 @@ input[type=submit]:hover {
   box-sizing: border-box;
   height:100px;
 }
-.container{
 
-font-family: Georgia, serif;
-font-style: bold;
-color: #444444;
-letter-spacing: 1.25px;
-line-height: 1.5;
-background: #EEEEEE;
-padding: 5px;
-margin: auto;
-font-size: 13pt;
-width: 100%-20px;
+.container {
+  font-family: Georgia, serif;
+  font-style: bold;
+  color: #444444;
+  letter-spacing: 1.25px;
+  line-height: 1.5;
+  background: #EEEEEE;
+  padding: 5px;
+  margin: auto;
+  font-size: 13pt;
+  width: 100%-20px;
 }
 
+/*** MOBILE FIRST Strategy ***/
 @media only screen and (min-width: 768px) {
 
   body {
@@ -203,12 +213,13 @@ width: 100%-20px;
     color : white;
     margin: 8px;
   }
+
   div{
     padding: 20px 25px 20px 25px;
     margin: 0;
     text-align: center;
-
   }
+
   p {
     text-align: justify;
   }
@@ -216,19 +227,21 @@ width: 100%-20px;
   .polaroid {
     width: 90%;
   }
-  #Content {
 
+  #Content {
     margin: 0px 10px 25px 15px;
     padding: 0;
     display: block;
   }
-  /* Navigation Bar */
+
+  /* Mobile Navigation Bar (navbar1) */
   #navbar1{
     padding:0;
     margin: 0 ;
     float: none;
     display: block;
   }
+
   #navbar1 ul {
     list-style-type: none;
     margin: 0;
@@ -248,7 +261,6 @@ width: 100%-20px;
     font-weight: bold;
     color: #fff
     white-space:nowrap;
-
   }
 
   #navbar1 li a {
@@ -259,16 +271,18 @@ width: 100%-20px;
     padding: 16px;
     color: #fff;
     text-decoration: none;
-
   }
 
   #navbar1 a:hover {
     background-color: #0B3C5D;
     color: #D9B310;
   }
-  #navbar{
+
+  /* Hide the desktop navbar when viewing on mobile device */
+  #navbar {
     visibility: hidden;
   }
+
   #Content {
     box-shadow: -10px 15px 5px #888888;
     margin: 10px 10px 25px 15px;
@@ -278,10 +292,12 @@ width: 100%-20px;
 }
 
 @media only screen and (min-width: 940px) {
+
   .div__photos{
     display: inline-flex;
     width: 100%;
   }
+
   .polaroid {
     width: 27%;
     background-color: white;
@@ -291,16 +307,4 @@ width: 100%-20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: auto;
   }
-}
-
-input,
-input::-webkit-input-placeholder {
-    font-size: 15px;
-    line-height: 3;
-}
-
-input {
-    font-size: 13px;
-    width: 400px;
-    padding: 0 20px;
 }
